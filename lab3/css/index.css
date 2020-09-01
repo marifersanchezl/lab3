@@ -1,0 +1,120 @@
+/* A01039543 */
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body{
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.logo > img{
+  width: 50px;
+}
+
+header{
+  padding: 2px;
+}
+
+.navbar{
+  background:grey;
+  color: white;
+  padding: 3px; 
+}
+
+/*h1{
+  text-align: center;
+}*/
+
+p{
+  text-align: left;
+}
+
+li{
+  list-style: none;
+}
+
+.hamburger{
+  text-align: right;
+}
+
+.menu{
+  display: none;
+}
+
+.product{
+  border: solid 1px grey;
+  margin: 10px 30px;
+  padding: 10px;
+  border: solid 1px;
+  border-color: lightgray;
+  border-radius: 10px;
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  padding: 1em;
+  border-top: solid 1px;
+  border-color: lightgray;
+}
+
+
+@media screen and (min-width: 768px) {
+  body{
+    margin: 25px 5%;
+    max-width: 1024px;
+  }
+
+  header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .logo{
+    flex-grow: 5;
+  }
+
+  h1{
+    flex-grow: 5;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  body{
+    margin: 25px 10%;
+  }
+
+  .hamburger{
+    display: none;
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  li{
+    padding: 5px;
+    margin: 2px;
+  }
+
+  /* si uso flex direction & justify
+   Apple se hace mas grande que los demas :(*/
+  
+  main{
+    display: flex;
+  }
+  
+  section{
+    width: 33%;
+  }
+}
